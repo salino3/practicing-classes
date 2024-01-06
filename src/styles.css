@@ -65,19 +65,129 @@ summary {
   border-radius: 5px;
 }
 
+.container_2 .content {
+  min-height: 200px;
+  height: auto;
+}
+
 .container_2 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1fr, 4);
   row-gap: 10px;
   column-gap: 20px;
 }
 
 .container_2 .content {
-    padding: 100px 50px;
     border: solid darkred;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.container_2 .box {
+    padding: 50px 50px;
+    width: 100px;
+    max-width: 100px;
+    max-height: 50px;
+    border: solid darkgreen;
+}
+
+.container_2 .box_1 {
+  justify-self: start;
+}
+
+.container_2 .box_1_2 {
+  justify-self: end;
+  border: solid yellow;
+}
+
+.container_2 .box_2 {
+  justify-self: end;
+}
+
+.container_2 .box_2_2 {
+  justify-self: start;
+  border: solid yellow;
 
 }
+
+.container_2 .box_3 {
+  justify-self: end;
+  border: solid yellow;
+}
+
+.container_2 .box_3_2 {
+  justify-self: start;
+}
+
+.container_2 .box_4 {
+  justify-self: start;
+  border: solid yellow;
+}
+
+.container_2 .box_4_2 {
+  justify-self: end;
+}
+
+/*  */
+
+.container_2 .content_5 {
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container_2 .content_6 {
+  display: flex;
+  flex-direction: columns;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container_2 .content_7 {
+  display: flex;
+  flex-direction: columns;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container_2 .content_8 {
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  align-items: end;
+}
+
+.container_2 .content:nth-last-child(-n+4) {
+  border: solid yellow;
+}
+
+.container_2 .content:nth-last-child(-n+4) .box {
+ background: blue;
+}
+/*  */
+
+.container_2 .content:nth-child(4n - 3),
+.container_2 .content:nth-child(4n) {
+  background-color: blue;
+}
+
+.container_2 .content:nth-child(4n - 2),
+.container_2 .content:nth-child(4n - 1) {
+  background-color: green;
+}
+
+
+
+
+
+
+
 
 
 
