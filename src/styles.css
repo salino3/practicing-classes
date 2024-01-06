@@ -4,7 +4,7 @@ body {
 }
 
 summary {
-  margin: 0px 0px 10px 50px;
+  margin: 10px 0px 10px 50px;
   cursor: pointer;
 }
 
@@ -39,7 +39,7 @@ summary {
 
 }
 
-.content {
+.container_1 .content {
   display: grid;
   width: auto;
   padding: 10px;
@@ -59,7 +59,25 @@ summary {
   justify-self: start;
 } 
 
+/* 2º */
 
+.container_2, .container_2 div {
+  border-radius: 5px;
+}
+
+.container_2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(1fr, 4);
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.container_2 .content {
+    padding: 100px 50px;
+    border: solid darkred;
+
+}
 
 
 
