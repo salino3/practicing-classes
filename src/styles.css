@@ -3,20 +3,61 @@ body {
     color: gray;
 }
 
-.sectionCards {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+summary {
+  margin: 0px 0px 10px 50px;
+  cursor: pointer;
+}
+
+
+/* details[open] > summary:after {
+    content: " Opened";
+} */
+
+/* details[open] > summary::marker {
+    display: none;
+    content: "Open ";
+} */
+
+/* summary::before {
+  content: "▲"; 
+  display: inline-block;
+  margin-right: 8px; 
+} */
+
+
+.container_1, .container_1 div {
+  border-radius: 5px;
+}
+
+.root .container_1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px 30px;
+  border: solid brown;
+  padding: 5px;
 
 }
 
-.sectionCards .card {
+.content {
+  display: grid;
+  width: auto;
+  padding: 10px;
+  border: solid green;
+}
+
+.container_1 .box {
+  padding: 50px;
   border: solid;
-  padding: 20px;
+  background: blue;
+  width: 100px;
+  max-width: 100px;
+  justify-self: end;
 }
 
-
-
+.container_1 .box_3, .container_1 .box_4 {
+  justify-self: start;
+} 
 
 
 
