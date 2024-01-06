@@ -6,6 +6,7 @@ body {
 summary {
   margin: 10px 0px 10px 50px;
   cursor: pointer;
+  color: red;
 }
 
 
@@ -59,6 +60,18 @@ summary {
   justify-self: start;
 } 
 
+
+.container_1 .content:nth-child(4n - 3),
+.container_1 .content:nth-child(4n) {
+  background-color: #A3CBE1;
+}
+
+.container_1 .content:nth-child(4n - 2),
+.container_1 .content:nth-child(4n - 1) {
+  background-color: #D7849A;
+}
+
+
 /* 2º */
 
 .container_2, .container_2 div {
@@ -79,7 +92,7 @@ summary {
 }
 
 .container_2 .content {
-    border: solid darkred;
+    border: solid darkred 3px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -112,7 +125,6 @@ summary {
 .container_2 .box_2_2 {
   justify-self: start;
   border: solid yellow;
-
 }
 
 .container_2 .box_3 {
@@ -164,7 +176,7 @@ summary {
 }
 
 .container_2 .content:nth-last-child(-n+4) {
-  border: solid yellow;
+  border: solid #E7D20D;
 }
 
 .container_2 .content:nth-last-child(-n+4) .box {
@@ -174,22 +186,10 @@ summary {
 
 .container_2 .content:nth-child(4n - 3),
 .container_2 .content:nth-child(4n) {
-  background-color: blue;
+  background-color: #FBA04B;
 }
 
 .container_2 .content:nth-child(4n - 2),
 .container_2 .content:nth-child(4n - 1) {
-  background-color: green;
+  background-color: #94D91C;
 }
-
-
-
-
-
-
-
-
-
-
-
-
