@@ -1,6 +1,7 @@
 body {
     background: black;
     color: gray;
+    padding-bottom: 200px;
 }
 
 summary {
@@ -193,3 +194,80 @@ summary {
 .container_2 .content:nth-child(4n - 1) {
   background-color: #94D91C;
 }
+
+/* 3º */
+
+.container_3 {
+  display: flex;
+ flex-direction: column;
+ justify: center;
+ align-items: strech;
+ gap: 10px;
+ border: solid darkgreen;
+ padding: 10px;
+}
+
+.container_3, .container_3 > div {
+  border-radius: 5px;
+}
+
+.container_3 div {
+ padding: 20px;
+ border: solid blue;
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+
+}
+
+.container_3 .content_1 {
+ padding: 10px;
+ display: flex;
+ flex-direction: row;
+ gap:50px;
+ min-height: 500px;
+ border: solid yellow;
+ 
+}
+
+
+
+/*  */
+
+.container_3 .content_2 {
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ box-sizing: border-box;
+}
+
+.container_3 .box2 {
+  display: grid;
+  grid-template-areas:
+  'a a a a'
+  'b b c c';
+  gap: 30px;
+  width: 100%;
+  padding: 30px;
+  min-height: 150px;
+  border: solid darkred;
+}
+
+.container_3 .content_2 .contentBox1 {
+  grid-area: a;
+}
+
+.container_3 .content_2 .contentBox2 {
+  grid-area: b;
+  border-radius: 40px;
+}
+
+.container_3 .content_2 .contentBox3 {
+  grid-area: c;
+  border-radius: 40px;
+}
+
+
+
+
