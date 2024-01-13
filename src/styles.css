@@ -339,10 +339,3 @@ summary {
 .container_3 .box_1_2 .contentBox:nth-child(5n - 3) {
   background-color: #7A6352;
 }
-
-/* 
-.container_3 .box_1_2 .contentBox:nth-child(4n - 2),
-.container_3 .box_1_2 .contentBox:nth-child(4n - 1) {
-  background-color: #94D91C;
-} */
-
