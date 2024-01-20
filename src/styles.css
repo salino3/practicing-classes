@@ -330,7 +330,6 @@ summary {
   background-color: #CB8352;
 }
 
-
 .container_3 .box_1_2 .contentBox:nth-child(5n - 1) {
   background-color: #7A6352;
 }
@@ -366,16 +365,26 @@ summary {
   "d . e";
 }
 
-.container_4 .content_1 .box_1 {
+.container_4 .content_1 .box {
+  position: relative;
   grid-area: a;
   height: 150px;
   width: 350px;
-  position: relative;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container_4 .content_1 p {
+  padding: 5px;
 }
 
 .botRightBottomConcave {
-    position:absolute;
-    background:black;
+    position: absolute;
+    background: black;
     border-right: none !important;
     border-bottom: none !important;
     width:25px;
@@ -464,12 +473,8 @@ summary {
 
 .container_4 .content_2 {
   display: grid;
-
   gap: 15px;
-
 }
-
-
 
 .container_4 .content_2 .box_1 {
   grid-column-start: 1;
@@ -508,4 +513,3 @@ summary {
   background-color: #A3CBE1;
 
 }
-
