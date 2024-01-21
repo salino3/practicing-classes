@@ -1,15 +1,19 @@
 {
-  "name": "front",
+  "homepage": "https://yourusername.github.io/practicing-classes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "cd src && lite-server -c lite-server.config.json"
+    "build": "parcel build src/index.html",
+    "start": "cd src && lite-server -c lite-server.config.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "lite-server": "^2.6.1"
   }
 }
