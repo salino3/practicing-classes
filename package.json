@@ -6,7 +6,7 @@
     "build": "parcel build src/index.html",
     "start": "cd src && lite-server -c lite-server.config.json",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build" 
+    "deploy" : "gh-pages -d dist" 
   },
   "keywords": [],
   "author": "",
