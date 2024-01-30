@@ -516,8 +516,18 @@ summary {
 
 /* 5º */
 
+.container_5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: strech;
+  gap: 20px;
+  border: solid blue;
+  padding: 10px;
+}
+
 .container_5 div {
-  padding: min(30px);;
+  padding: min(30px);
   border: solid;
 }
 
@@ -530,8 +540,7 @@ summary {
 .container_5 .content_1 .box_1 {
   grid-column: 1/3;
   grid-row: 1/3;
-    background: brown;
-
+  background: brown;
 }
 
 .container_5 .content_1  .box_2 {
@@ -572,8 +581,6 @@ summary {
   position: relative;
 }
 
-
-
 .container_5 .content_2 .box_1 {
   padding: 0px;
   border-radius: 50%;
@@ -592,28 +599,10 @@ summary {
  width: 70%;
  height: 70%;
  box-sizing: border-box;
- border: solid red;
- display: flex; 
- flex-direction: column;
- justify-content: center;
- align-items: center;
- text-align: center;
-
+ border: solid red 4px;
+ background: orange;
 }
 
-.container_5 .content_2 .box_1_1 p {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 50%;
-   display: flex; 
- flex-direction: column;
- justify-content: center;
- align-items: center;
-  text-align: justify;
-
-}
 
 /*  */
 
