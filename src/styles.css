@@ -652,7 +652,7 @@ position: relative;
 
 .container_6 {
   display: grid;
-  place-items. center;
+  place-items: center;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
